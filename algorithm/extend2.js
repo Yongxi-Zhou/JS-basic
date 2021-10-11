@@ -8,6 +8,7 @@
 }
 
 function Child(name, like) {
+    //重点
     Parent.call(this, name)
     this.like = like
 }
