@@ -37,7 +37,7 @@ Function.prototype._call = function(newObj, ...args) {
 
 // obj.getName._call(newObj, "age", 10)
 
-//注意： apply的参数只有两个，第二个是数组，不能用...args
+//注意： apply的参数只有两个，第二个是数组，不能用...args！！！
 Function.prototype._apply = function(newObj, args) {
     newObj = newObj || window
     let fn  = this
