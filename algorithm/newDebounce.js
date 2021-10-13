@@ -10,7 +10,7 @@ function debounce(fn, wait) {
         if (timer) {
             clearTimeout(timer)
         }
-        timer = setTimeout(function() {
+        timer = setTimeout(()=> {
             //在 wait 秒后执行函数，改变这个函数的this指向，让调用函数的对象执行函数
             fn.apply(context, args)
             //执行完之后让timer为null 
